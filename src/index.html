@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cookie set get</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal" id="modalButton">
+        Open modal
+    </button>
+
+    <!-- Button unset cookie -->
+    <button class="btn btn-danger mt-3" id="btnUnsetCookie">Unset Cookie</button>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Cookie</h5>
+            <button type="button" class="close closeModal" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <h3>
+                    If you click the close button, cookie will be set.
+                    The modal will no longer automatically open.
+                </h3> 
+                
+                <h3>
+                    閉じるボタンをクリックすると、Cookieが設定されます。モーダルは自動的に開きません。
+                </h3>
+            </div>
+            <div class="modal-footer">
+                
+            <button type="button" class="btn btn-secondary closeModal" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    <!-- Go to second page -->
+    <a href="/src/second.html" class="mt-3">Go to second page</a>
+
+
+
+
+
+    <!-- Bootstrap CDN scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- JS-Cookie -->
+    <script src="../node_modules/js-cookie/src/js.cookie.js"></script>
+
+    <!-- Custom script by Jonas -->
+    <script type="module" src="js/custom.js"></script>
+
+</body>
+</html>
